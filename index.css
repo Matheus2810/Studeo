@@ -1,0 +1,175 @@
+html{
+    overflow-y: hidden;
+}
+.content > img{
+    position: absolute;
+    z-index: 1;
+
+    left: calc(50% - calc(900px / 2));
+    width: 900px;
+}
+.content > .materias-box > div{
+    position: relative;
+    z-index: 2;
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    height: 460px;
+    padding-left: 50px; 
+    overflow-y: scroll;
+}
+
+.content > div > div > .materias{
+    width: 50%;
+    min-height: 125px;
+
+    border-radius: 10px;
+    user-select: none;
+    
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Roboto', sans-serif;
+
+    cursor: pointer;
+}
+.content > div > div > .materias > p{
+    font-size: 35px;
+    font-weight: 900;
+    color: white;
+}
+.nome-projeto{
+    font-size: 45px;
+    font-weight: 900;
+    text-align: center;
+    z-index: 2;
+    position: relative;
+
+    font-family: 'Edu SA Beginner', cursive;
+
+    margin: 20px auto;
+    padding-top: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+#matematica{
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.45), rgba(61, 61, 61, 0.3)),url("https://veja.abril.com.br/wp-content/uploads/2022/03/GettyImages-1130913708.jpg.jpg");
+    background-position: center;
+    background-size: 100%;
+    
+    transition: .3s;
+}
+#matematica:hover{
+    background-size: 110%;
+}
+
+#portugues{
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.45), rgba(61, 61, 61, 0.3)),url("https://afolhatorres.com.br/wp-content/uploads/2018/06/portugues.jpg");
+    background-position: center;
+    background-size: 100%;
+    
+    transition: .3s;
+}
+#portugues:hover{
+    background-size: 110%;
+}
+
+#ingles{
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.45), rgba(61, 61, 61, 0.3)),url("http://www.fundacaoprotocantins.org/wp-content/uploads/2019/02/professores-ingles-concorrer-bolsa-estudar-eua-noticias.jpg");
+    background-position: center;
+    background-size: 100%;
+    
+    transition: .3s;
+}
+#ingles:hover{
+    background-size: 110%;
+}
+
+#historia{
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.45), rgba(61, 61, 61, 0.3)),url("https://efivest.com.br/wp-content/uploads/2019/02/historia.jpg");
+    background-position: center;
+    background-size: 100%;
+    
+    transition: .3s;
+}
+#historia:hover{
+    background-size: 110%;
+}
+
+#geografia{
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.45), rgba(61, 61, 61, 0.3)),url("https://www.stoodi.com.br/wp-content/uploads/2020/04/globo-geografia.jpg");
+    background-position: center;
+    background-size: 100%;
+    
+    transition: .3s;
+}
+#geografia:hover{
+    background-size: 110%;
+}
+
+#filosofia{
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.45), rgba(61, 61, 61, 0.3)),url("https://ead.unifeob.edu.br/hubfs/o-que-se-entende-por-filosofia-moderna.png");
+    background-position: center;
+    background-size: 100%;
+    
+    transition: .3s;
+}
+#filosofia:hover{
+    background-size: 110%;
+}
+
+#sociologia{
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.45), rgba(61, 61, 61, 0.3)),url("https://www.gestaoeducacional.com.br/wp-content/uploads/2019/05/Sociologia-da-juventude.png");
+    background-position: center;
+    background-size: 100%;
+    
+    transition: .3s;
+}
+#sociologia:hover{
+    background-size: 110%;
+}
+
+#biologia{
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.45), rgba(61, 61, 61, 0.3)),url("https://beduka.com/blog/wp-content/uploads/2018/11/resumo-de-biologia-para-o-enem.jpg");
+    background-position: center;
+    background-size: 100%;
+    
+    transition: .3s;
+}
+#biologia:hover{
+    background-size: 110%;
+}
+
+#quimica{
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.45), rgba(61, 61, 61, 0.3)),url("https://super.abril.com.br/wp-content/uploads/2019/06/site_misturaquimica.png");
+    background-position: center;
+    background-size: 100%;
+    
+    transition: .3s;
+}
+#quimica:hover{
+    background-size: 110%;
+}
+
+#fisica{
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.45), rgba(61, 61, 61, 0.3)), url("https://t5z6q4c2.rocketcdn.me/wp-content/uploads/2020/04/o-que-e-fisica-conceito-ramos.jpg");
+    background-position: center;
+    background-size: 100%;
+    
+    transition: .3s;
+}
+#fisica:hover{
+    background-size: 110%;
+}
