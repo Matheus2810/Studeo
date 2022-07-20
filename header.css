@@ -44,18 +44,18 @@ header > ul{
 header > ul > li{
     border: thin solid black;
 
-    display: inline;
+    display: inline-block;
     padding: 5px 15px;
     border-radius: 5px;
     cursor: pointer;
 
     transition: .3s;
 }
+header > ul > li:hover{
+    transform: scale(1.05);
+}
 header > ul > li + li{
     margin-left: 10px;
-}
-header > ul > li:hover{
-    transform: scale(1.1);
 }
 
 .perfil-menu{
@@ -75,6 +75,7 @@ header > ul > li:hover{
     height: 60px;
     width: 60px;
     border-radius: 100%;
+    cursor: pointer;
 }
 
 .pesquisar-menu{
@@ -100,6 +101,13 @@ header > ul > li:hover{
 }
 .pesquisar-menu > label > i:hover{
     transform: scale(1.1);
+}
+.perfil-menu > a{
+    transition: .2s;
+}
+.perfil-menu > a:hover{
+    text-decoration: underline;
+    cursor: pointer;
 }
 header a{
     color: black;
