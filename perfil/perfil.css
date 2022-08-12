@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&family=Edu+SA+Beginner:wght@400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@font-face{
+    font-family: "Sansation";
+    src: url("/fonts/Sansation_Regular.ttf");
+}
+
+body, html, *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Sansation";
+}
+
+.perfil{
+    background: white;
+    width: 80%;
+    min-height: 500px;
+    padding: 30px 10px;
+
+    margin: 50px auto;
+
+    border-top: 10px solid black;
+    border-radius: 10px 10px 0 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    align-content: center;
+}
+.banner{
+    width: 95%;
+    height: 250px;
+    background: #D9D9D9;
+    border-radius: 10px;
+    position: relative;
+
+    margin-bottom: 60px;
+}
+.icone{
+    position: absolute;
+    --tamanho: 175px;
+    width: var(--tamanho);
+    height: var(--tamanho);
+    border: 7px solid white;
+    border-radius: 100%;
+    background: #D9D9D9;
+
+    left: calc(50% - calc(var(--tamanho) / 2));
+    bottom: calc(20px - calc(var(--tamanho) / 2));
+}
+.nome{
+    font-weight: 900;
+    font-size: 22px;
+    font-family: 'Roboto';
+}
+.editar{
+    background: gray;
+    color: white;
+
+    padding: 6px 16px;
+    font-size: 18px;
+    font-weight: 500;
+
+    border: none;
+    outline: none;
+    border-radius: 10px;
+}
+.descricao{
+    font-size: 18px;
+    width: 250px;
+    text-align: center;
+}
+
+.estatisticas{
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+.estatisticas div{
+    background: #F1F1F1;
+    position: relative;
+    border-radius: 10px;
+
+    min-height: 500px;
+}
+.estatisticas h1{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-size: 16px;
+}
+
+
+.editar-menu{
+    background: rgb(0, 0, 0, 0.5);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.editar-menu h1{
+    font-size: 22px;
+    font-weight: 900;
+}
+.editar-menu > div{
+    width: 700px;
+    height: 550px;
+    max-height: 95%;
+    background: white;
+    position: fixed;
+    padding: 30px 0;
+
+    left: calc(50% - calc(700px / 2));
+    top: calc(50% - calc(550px / 2));
+
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    align-content: space-between;
+
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.editar-senha-menu > div{
+    height: 400px;
+
+    top: calc(50% - calc(400px / 2));
+}
+.editar-menu > div > .editar-campos{
+    width: 500px;
+    display: grid;
+    gap: 55px;
+}
+.editar-menu > div > .editar-campos > div{
+    display: grid;
+}
+.editar-menu label{
+    font-size: 12px;
+    font-weight: 900;
+}
+.editar-menu > div > .editar-campos input,
+.editar-menu > div > .editar-campos textarea{
+    width: 100%;
+    padding: 4px 16px;
+
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    resize: none;
+}
+.editar-imagens{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin: 20px 0;
+}
+.editar-imagens a{
+    color: #8B8B8B;
+    font-weight: 900;
+}
+.editar-salvar{
+    padding: 8px 16px;
+    background: #FCA311;
+    border-radius: 5px;
+    font-size: 15px;
+    color: white;
+    outline: none;
+    border: none;
+}
+.editar-cancelar{
+    font-size: 14px;
+    font-weight: 100;
+    text-decoration: underline;
+
+    background: transparent;
+    border: none;
+    outline: none;
+    margin: 2px 0;
+}
+.editar-botoes{
+    display: grid;
+}

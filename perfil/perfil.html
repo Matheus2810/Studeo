@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../header.css" />
+    <link rel="stylesheet" href="perfil.css" />
+    <script src="https://kit.fontawesome.com/51223ed46e.js" crossorigin="anonymous"></script>
+    <script src="../index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="botao-menu">
+            <img src="https://via.placeholder.com/500" alt="">
+        </div>
+
+        <div class="pesquisar-menu">
+            <div>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div>
+                <input type="text" placeholder="Pesquisar...">
+            </div>
+        </div>
+
+        <div class="perfil-menu">
+            <a>Perfil</a>
+            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+        </div>
+    </header>
+
+    <div class="content">
+        <div class="perfil">
+            <div class="banner">
+                <div class="icone"></div>
+            </div>
+
+            <p class="nome">layrasfc</p>
+
+            <button class="editar" onclick="mostrarNotificacao('editar-perfil')">Editar</button>
+
+            <p class="descricao">"a busca pelo saber é infinita!"</p>
+        
+            <br><br>
+
+            <div class="estatisticas">
+                <div class="aulas">
+                    <h1><i class="fa-solid fa-star"></i> Aulas Favoritas</h1>
+                </div>
+                <div class="recentemente">
+                    <h1><i class="fa-solid fa-clock-rotate-left"></i> Recentemente Acessados</h1>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="editar-menu editar-senha-menu invisivel">
+            <div>
+                <div>
+                    <h1>Mudar Senha</h1>
+                </div>
+                
+                <div class="editar-campos">
+                    <div>
+                        <label for="user-edit">Usuário:</label>
+                        <input id="user-edit" type="text" value="layrasfc" placeholder="Digite aqui seu novo usuário.">
+                    </div>
+                    
+                    <div>
+                        <label for="password-edit">Senha:</label>
+                        <input id="password-edit" type="password" placeholder="Digite aqui sua nova senha.">
+                    </div>
+                    
+                    <div>
+                        <label for="password-edit">Confirmar Senha:</label>
+                        <input id="password-edit" type="password" placeholder="Digite novamente sua nova senha.">
+                    </div>
+                </div>
+                
+                <div class="editar-botoes">
+                    <button class="editar-salvar">Salvar</button>
+                    <input class="editar-cancelar" type="reset" value="cancelar alterações">
+                </div>
+            </div>
+        </div>
+
+        <div class="editar-menu invisivel" id="editar-perfil">
+            <div>
+                <div>
+                    <h1>Editar Perfil</h1>
+                </div>
+                
+                <div class="editar-campos">
+                    <div>
+                        <label for="user-edit">Usuário:</label>
+                        <input id="user-edit" type="text" value="layrasfc" placeholder="Altere aqui seu usuário.">
+                    </div>
+                    
+                    <div>
+                        <label for="password-edit">Senha:</label>
+                        <input id="password-edit" type="password" placeholder="Altere aqui sua senha.">
+                    </div>
+                    
+                    <div>
+                        <label for="description-edit">Descrição:</label>
+                        <textarea id="description-edit" rows="7"></textarea>
+                    </div>
+                </div>
+
+                <div class="editar-imagens">
+                    <a href="">Alterar Foto</a>
+                    <a href="">Alterar Banner</a>
+                </div>
+                
+                <div class="editar-botoes">
+                    <button class="editar-salvar">Salvar</button>
+                    <input class="editar-cancelar" onclick="mostrarNotificacao('editar-perfil')" type="reset" value="cancelar alterações">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

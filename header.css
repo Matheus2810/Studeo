@@ -9,6 +9,12 @@ Edu SA Beginner:
 font-family: 'Edu SA Beginner', cursive; 
 
 */
+
+@font-face{
+    font-family: "Sansation";
+    src: url("/fonts/Sansation_Regular.ttf");
+}
+
 *::-webkit-scrollbar {
     width: 5px;
 }
@@ -23,93 +29,76 @@ body, html, *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: "Sansation";
 }
 body{
     background: rgb(255,255,255);
     background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(201,201,201,1) 100%);
+    background-image: url('./resources/lapis.jpg');
+    background-position: center;
+    background-size: cover;
 }
 header{
     height: 100px;
 
-    display: grid;
+    display: flex;
     align-items: center;
-    grid-template-columns: 1fr 2fr 1fr;
-
-    font-family: 'Edu SA Beginner', cursive;
+    justify-content: space-around;
     font-weight: 900;
 }
-header > ul{
-    text-align: center;
-}
-header > ul > li{
-    border: thin solid black;
 
-    display: inline-block;
-    padding: 5px 15px;
-    border-radius: 5px;
-    cursor: pointer;
+.botao-menu img{
+    border-radius: 100%;
+    width: 44px;
+    height: 44px;
+}
 
-    transition: .3s;
+.pesquisar-menu{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 15px;
+    border-radius: 90px;
+    background: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+    padding: 4px 24px;
+    height: 34px;
+
+    align-content: center;
+    align-items: center;
 }
-header > ul > li:hover{
-    transform: scale(1.05);
+.pesquisar-menu div{
+    display: grid;
 }
-header > ul > li + li{
-    margin-left: 10px;
+.pesquisar-menu input{
+    background: transparent;
+    border: none;
+    outline: none;
+    width: 300px;
+
+    color: #979797;
+}
+.pesquisar-menu i{
+    color: #979797;
 }
 
 .perfil-menu{
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 15px;
+    gap: 20px;
 }
-.perfil-menu > i{
-    cursor: pointer;
-    transition: .3s;
-}
-.perfil-menu > i:hover{
-    transform: scale(1.08);
-}
-.perfil-menu > img{
-    height: 60px;
-    width: 60px;
-    border-radius: 100%;
-    cursor: pointer;
-}
+.perfil-menu a{
+    border-radius: 40px;
+    background: #FCA311;
 
-.pesquisar-menu{
-    display: flex;
-    gap: 15px;
-    justify-content: center;
-    align-items: center;
-}
-.pesquisar-menu > input{
-    width: 400px;
-    border-radius: 5px;
-    font-size: 15px;
-    padding: 3px 10px;
-
-    outline: none;
-    border: thin solid black;
-    font-family: 'Edu SA Beginner', cursive;
-    background: transparent;
-}
-.pesquisar-menu > label > i{
-    cursor: pointer;
-    transition: .3s;
-}
-.pesquisar-menu > label > i:hover{
-    transform: scale(1.1);
-}
-.perfil-menu > a{
-    transition: .2s;
-}
-.perfil-menu > a:hover{
-    text-decoration: underline;
-    cursor: pointer;
+    padding: 6px 18px;
+    color: white;
 }
 header a{
     color: black;
     text-decoration: none;
+}
+
+.invisivel{
+    display: none;
 }
